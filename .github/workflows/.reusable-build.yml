@@ -2,18 +2,6 @@ name: ".reusable-build"
 
 on:
   workflow_call:
-    inputs:
-      HOST_USER_LOGIN:
-        description: "Host user login"
-        required: true
-        type: "string"
-    secrets:
-      HOST_USER_PASSWORD:
-        description: "Host user password"
-        required: true
-      HOST_CF_TUNNEL_TOKEN:
-        description: "Cloudflare tunnel token"
-        required: true
     outputs:
       ARTIFACT_NAME:
         description: "The name of the artifact produced"
