@@ -12,7 +12,7 @@ on:
 
 jobs:
   build:
-    name: "Reusable Build"
+    name: "Build"
     runs-on: [ "ubuntu-24.04" ]
     outputs:
       ARTIFACT_NAME: ${{ steps.resolve-artifact-name.outputs.ARTIFACT_NAME }}
